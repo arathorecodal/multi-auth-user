@@ -19,7 +19,7 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('', include('django_rest_multitokenauth.urls', namespace='multi_token_auth')),
+    url('api/auth', include('django_rest_multitokenauth.urls', namespace='multi_token_auth')),
 
 ]
 # echo "# multi-auth-user" >> README.md
